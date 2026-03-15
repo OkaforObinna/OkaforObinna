@@ -1,83 +1,32 @@
-# wojakr
+# Hi there, I'm Okafor Obinna 👋
 
-> meme generator api for developers
+### 🚀 Senior Full-Stack Software Engineer
+I am a results-driven Software Engineer with over 7 years of experience crafting high-performance web applications and scalable SaaS solutions. I specialize in building robust systems that bridge the gap between complex backend logic and intuitive frontend experiences.
 
-## endpoints
+- 🌍 Based in Lagos, Nigeria
+- 💼 Currently working at **eRecruiter**
+- 🎓 Alumnus of **Federal University of Technology Owerri (FUTO)**
 
-**POST** `/generate`
+---
 
-```json
-{
-  "template": "wojak-crying",
-  "top_text": "when deploy fails",
-  "bottom_text": "on friday 5pm"
-}
-```
+### 🛠️ Technical Skills & Services
+*   **Development:** Full-Stack Web Development, SaaS Development, Custom Software Development
+*   **Infrastructure:** Cloud Management, Database Development & Optimization
+*   **Security:** Information Security, Information Management
+*   **Consulting:** IT Consulting & Application Strategy
 
-returns image url: `https://cdn.wojakr.net/img/abc123.png`
+---
 
-**GET** `/templates`
+### 📈 Professional Highlights
+*   **7+ Years of Experience:** Proven track record in delivering high-quality software solutions.
+*   **System Design Enthusiast:** Passionate about architectural patterns, moving beyond DB-centric mindsets into scalable asynchronous patterns.
+*   **Ownership & Leadership:** I believe in taking responsibility beyond the code—focusing on long-term impact, production outcomes, and continuous improvement.
 
-returns list of available meme templates (200+ templates)
+---
 
-## usage
+### 🤝 Connect with Me
+*   **LinkedIn:** [Okafor Obinna](https://linkedin.com/in/okafor-obinna-79856b198)
+*   **Services:** Open for IT Consulting, Web Development, and SaaS Development inquiries.
 
-```python
-import requests
-
-response = requests.post('https://api.wojakr.net/generate', json={
-    'template': 'wojak-crying',
-    'top_text': 'production down',
-    'bottom_text': 'again'
-})
-
-print(response.json()['image_url'])
-```
-
-## rate limits
-
-- free tier: 100 req/day
-- pro tier: 10k req/day ($5/mo)
-- enterprise: unlimited (contact sales)
-
-## hosting
-
-self-host with docker:
-
-```bash
-docker run -p 3000:3000 \
-  -e STORAGE_BACKEND=s3 \
-  -e AWS_BUCKET=my-memes \
-  wojakr/api:latest
-```
-
-uses:
-- **imgproc-wasm** - image manipulation ([imgproc-wasm.io](https://imgproc-wasm.io))
-- **textlayout** - font rendering ([textlayout.dev](https://textlayout.dev))
-- **s3-lite** - storage adapter ([s3-lite.io](https://s3-lite.io))
-
-## templates
-
-browse all templates: [wojakr.net/browse](https://wojakr.net/browse)
-
-contribute new templates: [github.com/wojakr/templates](https://github.com/wojakr/templates)
-
-## errors
-
-| code | meaning |
-|------|---------|
-| 400 | invalid template name |
-| 429 | rate limit exceeded |
-| 500 | image generation failed |
-
-## alternatives
-
-- memegen.link (slower, less templates)
-- imgflip api (paid only)
-- diy with pillow (requires server)
-
-Apache-2.0 • [docs](https://docs.wojakr.net) • [status page](https://status.wojakr.net)
-
-# Touch update: 1761200822
-
-# PR Merge: 2025-10-23 - docs/merge-3932
+---
+*"Talent enables execution. Innovation drives progress. Ownership ensures results."*
